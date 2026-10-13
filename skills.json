@@ -44,7 +44,8 @@
         "Electron",
         "自动化",
         "mac"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "huashu-gpt-image",
@@ -60,7 +61,8 @@
         "海报",
         "prompt",
         "image"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "huashu-icon-set",
@@ -74,7 +76,8 @@
         "icon",
         "图标集",
         "豆包"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "huashu-slide-doubao",
@@ -89,7 +92,8 @@
         "PPT",
         "封面",
         "slides"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "huashu-slide-codex",
@@ -103,7 +107,8 @@
         "PPT",
         "封面",
         "slides"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "huashu-excel",
@@ -119,7 +124,8 @@
         "对账",
         "报表",
         "CSV"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "huashu-md-html",
@@ -134,7 +140,8 @@
         "DOCX",
         "转换",
         "排版"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "seedance-skill",
@@ -149,7 +156,8 @@
         "AI视频",
         "白模",
         "分镜"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "tramstop-skill",
@@ -164,7 +172,8 @@
         "人味",
         "de-slop",
         "润色"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "dukou",
@@ -179,7 +188,8 @@
         "X Articles",
         "B站专栏",
         "投稿"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "x-mentor-skill",
@@ -195,7 +205,8 @@
         "涨粉",
         "增长",
         "运营"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "huashu-weread",
@@ -225,7 +236,8 @@
         "人物skill",
         "思维方式",
         "造人"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "darwin-skill",
@@ -253,7 +265,8 @@
         "心理分析",
         "可解释性",
         "调优"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "skills-guide",
@@ -266,7 +279,8 @@
         "skill教程",
         "写skill",
         "指南"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "huashu-report",
@@ -284,7 +298,8 @@
         "论文",
         "arXiv",
         "report"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "zhangxuefeng-skill",
@@ -298,7 +313,8 @@
         "志愿",
         "考研",
         "职业规划"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "steve-jobs-skill",
@@ -312,7 +328,8 @@
         "Jobs",
         "产品",
         "品味"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "elon-musk-skill",
@@ -325,7 +342,8 @@
         "马斯克",
         "Musk",
         "第一性原理"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "munger-skill",
@@ -339,7 +357,8 @@
         "Munger",
         "逆向思考",
         "投资"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "karpathy-skill",
@@ -352,7 +371,8 @@
         "Karpathy",
         "卡帕西",
         "AI"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "trump-skill",
@@ -365,7 +385,8 @@
         "特朗普",
         "Trump",
         "谈判"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "feynman-skill",
@@ -378,7 +399,8 @@
         "费曼",
         "Feynman",
         "学习法"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "naval-skill",
@@ -392,7 +414,8 @@
         "Naval",
         "杠杆",
         "财富"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "sun-yuchen-perspective",
@@ -405,7 +428,8 @@
         "孙宇晨",
         "营销",
         "注意力"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "zhang-yiming-skill",
@@ -419,7 +443,8 @@
         "字节",
         "产品",
         "组织"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "taleb-skill",
@@ -433,7 +458,8 @@
         "Taleb",
         "黑天鹅",
         "反脆弱"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "mrbeast-skill",
@@ -448,7 +474,8 @@
         "标题",
         "封面",
         "留存"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "paul-graham-skill",
@@ -462,7 +489,8 @@
         "PG",
         "创业",
         "写作"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "ilya-sutskever-skill",
@@ -475,7 +503,8 @@
         "Ilya",
         "Sutskever",
         "深度学习"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "huashu-slides",
@@ -798,7 +827,8 @@
         "首屏",
         "秒开",
         "performance"
-      ]
+      ],
+      "version": "1.0.0"
     },
     {
       "name": "mcstomach",
@@ -813,7 +843,8 @@
         "订单",
         "美食",
         "趣味"
-      ]
+      ],
+      "version": "1.0.0"
     }
   ],
   "not_skills": [
