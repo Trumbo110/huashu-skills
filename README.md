@@ -6,7 +6,7 @@
   <sub>动画由 <a href="https://github.com/alchaincyf/huashu-design">huashu-design</a> skill制作</sub>
 </p>
 
-这里是花叔在GitHub上全部开源Skill的总目录，共53个，分三层收录。全部是标准Agent Skills格式（`SKILL.md`），Claude Code / Codex / Kimi Code等支持该格式的agent通用。
+这里是花叔在GitHub上全部开源Skill的总目录，共57个，分三层收录。全部是标准Agent Skills格式（`SKILL.md`），Claude Code / Codex / Kimi Code等支持该格式的agent通用。
 
 > 花叔 | AI Native Coder · 独立开发者 · 全网50万+读者
 > 代表作：小猫补光灯（App Store付费榜Top1）·《一本书玩转DeepSeek》· 女娲Skill生态
@@ -17,13 +17,13 @@
 - [30秒上手](#30秒上手)
 - [全景一览](#全景一览)
 - [按需求找Skill](#按需求找skill)
-- [旗舰Skills](#旗舰skills)（18个独立仓库）
+- [旗舰Skills](#旗舰skills)（21个独立仓库）
 - [人物视角Skills](#人物视角skills)（14个独立仓库）
 - [内置Skills](#内置skills)（22个，本仓库）
 - [安装指南](#安装指南)
 - [保持更新](#保持更新)
 - [给AI Agent的协议](#给ai-agent的协议)
-- [这三个不是Skill](#这三个不是skill)
+- [这四个不是Skill](#这四个不是skill)
 
 ## 30秒上手
 
@@ -43,7 +43,7 @@ git clone https://github.com/alchaincyf/huashu-design.git ~/.claude/skills/huash
 
 | 层 | 数量 | 是什么 | 怎么装 |
 |---|---|---|---|
-| [旗舰Skills](#旗舰skills) | 18 | 各自深耕一个领域的完整系统，独立仓库 | git clone一条命令 |
+| [旗舰Skills](#旗舰skills) | 21 | 各自深耕一个领域的完整系统，独立仓库 | git clone一条命令 |
 | [人物视角Skills](#人物视角skills) | 14 | 女娲蒸馏的人物思维操作系统，独立仓库 | git clone一条命令 |
 | [内置Skills](#内置skills) | 22 | 轻量内容创作技能+更新检查工具，就在本仓库 | 复制子目录 |
 
@@ -75,7 +75,7 @@ git clone https://github.com/alchaincyf/huashu-design.git ~/.claude/skills/huash
 
 ## 旗舰Skills
 
-18个独立仓库，每个都是完整系统。安装：`git clone https://github.com/alchaincyf/<仓库名>.git ~/.claude/skills/<仓库名>`（dukou除外，见表格备注）。
+21个独立仓库，每个都是完整系统。安装：`git clone https://github.com/alchaincyf/<仓库名>.git ~/.claude/skills/<仓库名>`（dukou、mcstomach除外，见表格备注）。
 
 ### 设计与视觉
 
@@ -106,6 +106,13 @@ git clone https://github.com/alchaincyf/huashu-design.git ~/.claude/skills/huash
 | Skill | Stars | 干什么的 |
 |---|---|---|
 | [seedance-skill](https://github.com/alchaincyf/seedance-skill) | ![](https://img.shields.io/github/stars/alchaincyf/seedance-skill?style=flat&label=%E2%98%85) | 白模驱动的AI视频工作台：白模参考视频与提示词出自同一份scene.json，渲染前做几何体检 |
+| [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | ![](https://img.shields.io/github/stars/alchaincyf/huashu-art-motion?style=flat&label=%E2%98%85) | 艺术与解说动画：35种艺术风格、9种解说动画语法，拆解复刻、口播驱动整片，用代码让画动起来 |
+
+### 开发提速
+
+| Skill | Stars | 干什么的 |
+|---|---|---|
+| [huashu-flash](https://github.com/alchaincyf/huashu-flash) | ![](https://img.shields.io/github/stars/alchaincyf/huashu-flash?style=flat&label=%E2%98%85) | 闪电.skill：照Anthropic两周把claude.ai提速3倍的方法给网站或App提速，先量基线、再证指标、逐步优化，用棘轮锁住只许变好 |
 
 ### 写作与分发
 
@@ -129,6 +136,12 @@ git clone https://github.com/alchaincyf/huashu-design.git ~/.claude/skills/huash
 | [darwin-skill](https://github.com/alchaincyf/darwin-skill) | ![](https://img.shields.io/github/stars/alchaincyf/darwin-skill?style=flat&label=%E2%98%85) | 达尔文：让skill无限进化——评估 → 改进 → 测试 → 保留或回滚，全程git留痕 |
 | [freud-skill](https://github.com/alchaincyf/freud-skill) | ![](https://img.shields.io/github/stars/alchaincyf/freud-skill?style=flat&label=%E2%98%85) | 弗洛伊德：给AI做心理分析，基于Anthropic可解释性研究，诊断prompt / skill的身份冲突并重写 |
 | [skills-guide](https://github.com/alchaincyf/skills-guide) | ![](https://img.shields.io/github/stars/alchaincyf/skills-guide?style=flat&label=%E2%98%85) | Claude Code Skills完整指南：理解、查找和创建skills |
+
+### 生活与趣味
+
+| Skill | Stars | 干什么的 |
+|---|---|---|
+| [mcstomach](https://github.com/alchaincyf/mcstomach) | ![](https://img.shields.io/github/stars/alchaincyf/mcstomach?style=flat&label=%E2%98%85) | 麦门胃：读麦当劳历史订单，带证据提炼口味规则，确认后生成可携带的个人「胃」（skill在`mcstomach/`子目录，按复制子目录方式安装） |
 
 ## 人物视角Skills
 
@@ -236,7 +249,7 @@ cp -r /tmp/huashu-skills/huashu-slides ~/.claude/skills/
 
 1. 安装留痕：git clone装的skill自带`.git`（安装日期、版本尽在其中）；复制安装的skill由agent在目录里写一个`.huashu-skill-meta.json`，记录来源仓库、安装时commit、安装 / 检查日期（格式见updater的SKILL.md）
 2. 一键检查：`python3 ~/.claude/skills/huashu-skill-updater/scripts/check_updates.py`扫描全部已装的花叔系skill，逐个对比远程仓库最新commit，报告哪些落后、怎么更新
-3. 自动触发：每个独立仓库skill的SKILL.md末尾自带「版本自检」段——agent使用时读目录里的`.last-update-check`（一行日期），30天内检查过就静默跳过、绝不打扰；到期才联网对比一次，且只在确认落后时于任务完成后提醒一句，更新与否由用户决定。想更省心就挂个cron每月1号跑一次updater（命令见其SKILL.md，`--mark-checked`会同步刷新各skill的自检日期）
+3. 自动提醒：每个独立仓库skill的SKILL.md末尾自带「版本检查」段——agent使用时读目录里的`.last-update-check`，上次检查不足30天就跳过、绝不打扰；到期才读一次远程仓库的版本标签（只读标签，不下载文件、不上传数据），且只在确认有新版本时于任务完成后提醒一句，更新与否由用户决定。只有作者打了版本标签的实质更新才算新版本，改错字、改README不会触发提醒。想更省心就挂个cron每月1号跑一次updater（命令见其SKILL.md）
 
 ## 给AI Agent的协议
 
@@ -250,16 +263,17 @@ cp -r /tmp/huashu-skills/huashu-slides ~/.claude/skills/
 3. 安装留痕：复制安装的skill，安装完在其目录里写`.huashu-skill-meta.json`——`{"name", "repo": "alchaincyf/<repo>", "subdir", "commit": <clone时git rev-parse HEAD的值>, "installed_at": <今天>, "last_checked": <今天>}`。git clone安装的不需要。这是更新检查机制的基础，见[huashu-skill-updater](huashu-skill-updater/)。
 4. 验证：确认`~/.claude/skills/<skill名>/SKILL.md`存在即安装成功，然后提醒用户重启agent会话生效。
 5. 选型：用户需求模糊时，先查上文[按需求找Skill](#按需求找skill)路由表，给出1-3个候选并说明差别，让用户选，不要默装。
-6. 更新检查：会话中用到某个花叔系skill时，若其`.huashu-skill-meta.json`的`last_checked`（或`.git`最近fetch）距今超过30天，完成当前任务后跑一次`huashu-skill-updater/scripts/check_updates.py`并向用户报告，有更新时列出但不要不问就更新。
+6. 更新检查：单个skill的到期检查由它末尾的「版本检查」段负责；用户要求全量检查时跑`huashu-skill-updater/scripts/check_updates.py`并报告，有更新时列出但不要不问就更新。
 7. 两个坑：
    - `huashu-design`有两个：用户说「花叔的设计skill」默认指独立仓库的完整设计系统；本仓库内置的同名skill只是轻量设计哲学顾问。两者目录名冲突，不能同时装在`~/.claude/skills/huashu-design/`，都要装时把内置版目录和其SKILL.md frontmatter里的`name`一起改名（如`huashu-design-philosophy`）。
    - 人物skill在独立仓库和`nuwa-skill/examples/`里各有一份，装独立仓库那份即可，不要重复安装。
 
-## 这三个不是Skill
+## 这四个不是Skill
 
 容易混淆、但不该往skills目录装的仓库：
 
 - [huashu-doubao-search](https://github.com/alchaincyf/huashu-doubao-search)是MCP server（联网搜索），按MCP方式配置
+- [huashu-chrome](https://github.com/alchaincyf/huashu-chrome)是MCP server + Chrome扩展（让agent带登录态操控你的Chrome），按仓库README安装
 - [fanbox](https://github.com/alchaincyf/fanbox)是桌面App（vibe coding驾驶舱）
 - 橙皮书系列（[claude-code-orange-book](https://github.com/alchaincyf/claude-code-orange-book)等）是免费电子书
 
@@ -267,8 +281,8 @@ cp -r /tmp/huashu-skills/huashu-slides ~/.claude/skills/
 
 公众号「花叔」| AI工具与效率提升 | 全网50万+读者
 
-更多项目见 [github.com/alchaincyf](https://github.com/alchaincyf)
+更多项目见 [github.com/alchaincyf](https://github.com/alchaincyf)。作者介绍、代表作品和各平台账号的整理版在[about-author.md](about-author.md)，每周从GitHub主页自动生成，各skill里的作者页也来自它。
 
 ---
 
-**English**: This repo is the master index of all of Huashu's open-source Agent Skills — 52 skills in three tiers: 16 flagship skills (standalone repos, e.g. [huashu-design](https://github.com/alchaincyf/huashu-design), [nuwa-skill](https://github.com/alchaincyf/nuwa-skill), [darwin-skill](https://github.com/alchaincyf/darwin-skill)), 14 persona skills distilled by nuwa-skill, and 22 lightweight skills bundled in this repo, including an update checker ([huashu-skill-updater](huashu-skill-updater/)) that compares installed skills against their upstream repos. All skills use the standard `SKILL.md` format and work with Claude Code, Codex, Kimi Code and other agents. Standalone skills install with one command: `git clone https://github.com/alchaincyf/<repo>.git ~/.claude/skills/<repo>`. A machine-readable catalog for AI agents lives in [`skills.json`](skills.json).
+**English**: This repo is the master index of all of Huashu's open-source Agent Skills — 57 skills in three tiers: 21 flagship skills (standalone repos, e.g. [huashu-design](https://github.com/alchaincyf/huashu-design), [nuwa-skill](https://github.com/alchaincyf/nuwa-skill), [darwin-skill](https://github.com/alchaincyf/darwin-skill)), 14 persona skills distilled by nuwa-skill, and 22 lightweight skills bundled in this repo, including an update checker ([huashu-skill-updater](huashu-skill-updater/)) that compares installed skills against the version tags of their upstream repos. All skills use the standard `SKILL.md` format and work with Claude Code, Codex, Kimi Code and other agents. Standalone skills install with one command: `git clone https://github.com/alchaincyf/<repo>.git ~/.claude/skills/<repo>`. A machine-readable catalog for AI agents lives in [`skills.json`](skills.json).
