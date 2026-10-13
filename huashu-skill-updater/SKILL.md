@@ -50,7 +50,7 @@ rm -rf ~/.claude/skills/<名字> && cp -r /tmp/huashu-skills-update/<名字> ~/.
 }
 ```
 
-git clone 安装的 skill 不需要这个文件，`.git` 本身就是元数据。另外每个独立仓库 skill 的 SKILL.md 末尾自带「版本检查」段：agent 使用该 skill 时读目录里的 `.last-update-check`（一行日期加结果，如 `2026-10-13 ok`），上次成功不足 30 天、上次失败不足 7 天就跳过，到期才读一次远程版本标签。`check_updates.py --mark-checked` 联网成功后会同时刷新这个文件，避免刚全量检查完又被单个 skill 重复提醒。
+git clone 安装的 skill 不需要这个文件，`.git` 本身就是元数据。另外每个独立仓库 skill 的 SKILL.md 末尾自带「版本检查」段：agent 使用该 skill 时读目录里的 `.last-update-check`（一行日期加结果，如 `2026-10-13 ok`），上次成功不足 30 天、上次失败不足 7 天就跳过，到期才读一次远程版本标签；用户把内容改成 `off` 就永久不检查。`check_updates.py --mark-checked` 联网成功后会同时刷新这个文件，避免刚全量检查完又被单个 skill 重复提醒。
 
 ## 每月定期检查
 

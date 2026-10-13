@@ -79,9 +79,11 @@ def check_git_install(path, mark_checked=False):
     ok, remote = remote_version(path)
     if not ok:
         return ("unknown", "无法访问远程仓库（断网或被拦截），下次再查", None)
-    if mark_checked:
-        # skill 末尾「版本检查」段读这个文件决定 30 天内是否跳过联网；只有联网成功才写
-        with open(os.path.join(path, ".last-update-check"), "w") as f:
+    state = os.path.join(path, ".last-update-check")
+    user_off = os.path.exists(state) and open(state).read().strip() == "off"
+    if mark_checked and not user_off:
+        # skill 末尾「版本检查」段读这个文件决定 30 天内是否跳过联网；只有联网成功才写，用户写了 off 不覆盖
+        with open(state, "w") as f:
             f.write(datetime.date.today().isoformat() + " ok\n")
     local = local_version(path)
     if remote is None:
