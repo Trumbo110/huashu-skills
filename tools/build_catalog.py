@@ -151,7 +151,7 @@ def clean(text):
 
 def section_blocks(body):
     """把主页 README 切成 [(标题, 段落列表)]，丢掉徽章与图片。"""
-    body = re.sub(r"<!-- (\w+)-START -->.*?<!-- \1-END -->", "", body, flags=re.S)
+    body = re.sub(r"<!-- ([\w-]+)-START -->.*?<!-- \1-END -->", "", body, flags=re.S)  # 标记名可带连字符，如 MCSTOMACH-PROMO-202610
     sections, title, paras = [], None, []
     for chunk in re.split(r"\n\s*\n", body):
         chunk = chunk.strip()
@@ -199,7 +199,7 @@ def render_contact(paras):
 
 def build_about(profile_md, catalog):
     sections = section_blocks(profile_md)
-    intro = next((clean(p) for p in sections[0][1] if not p.startswith("<img") and clean(p)), "")
+    intro = next((clean(p) for p in sections[0][1] if not p.startswith(("<img", "![", "[![")) and clean(p)), "")
     out = [
         "# 关于作者：花叔",
         "",
@@ -270,6 +270,10 @@ def main():
     about = build_about(profile, catalog)
     if "## 社交媒体与联系" not in about or "## 全部开源 skill" not in about:
         sys.exit("主页 README 结构变了，about-author.md 缺章节，保留旧文件，请检查解析规则")
+    # 作者页会被复制进每个 skill 仓库，相对路径（主页的 assets/ 图片）在那里全是坏链
+    relative = re.findall(r"\]\((?!https?://|mailto:)([^)]*)\)", about)
+    if relative:
+        sys.exit(f"about-author.md 含相对路径 {relative}，复制到别的仓库会失效，保留旧文件，请检查解析规则")
 
     c1 = write_if_changed(SKILLS_JSON, json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", args.check) if changed_json else False
     c2 = write_if_changed(ABOUT_MD, about, args.check)
